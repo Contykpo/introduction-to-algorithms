@@ -1,0 +1,15 @@
+Para el d:
+Primero recorro cada las componentes del grafo G con DFS.
+Chequeo cada componente para determinar si es bipartito o no. Si alguna componente no es bipartita, el grafo completo no es bipartito y devuelvo falso, caso contrario verdadero.
+
+Para el c:
+Primero recorro el grafo G y encuentro el arbol generador T con su raiz.
+Luego identifico los vectores de vertices V y W segun si estan a distancia par o impar de r.
+Verifico si hay una arista VW en E(G) \ E(T) tal que los vertices pertenezcan a V o W, y si se encuentra una arista asi, devuelvo el unico ciclo de T agregandole la arista VW.
+Por ultimo, si no se encontro ninguna arista que me cumpla con la otra condicion, devuelvo la biparticion (V, W).
+
+3 3 10
+1 3 6
+6 7 4
+4 9 -3
+0 0 0
